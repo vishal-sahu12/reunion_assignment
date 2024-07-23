@@ -12,8 +12,6 @@ const FilterDrawer = ({
   const categories = ["Health", "Pets", "Clothing", "Activity", "Home", "Automotive", "Entertainment", "Beauty", "Electronics"];
   const subcategories = ["Nutrition", "Aquarium", "Cat", "First Aid", "Dog", "Tools", "Gadgets"];
 
-
-
   return (
     <Drawer anchor="right" open={filterDrawerOpen} onClose={handleFilterDrawerClose}>
       <Box sx={{ width: 300, padding: 2 }}>
@@ -82,7 +80,6 @@ const FilterDrawer = ({
           type="date"
           value={filters.updatedAt.to}
           onChange={(e) => handleFilterChange('updatedAt.to', e.target.value)}
-
           fullWidth
           margin="normal"
           InputLabelProps={{ shrink: true }}
